@@ -1,3 +1,4 @@
+//only sorted array
 public class remove {
     public static int[] remov(int a[]) {
         int temp[] = new int[a.length];
