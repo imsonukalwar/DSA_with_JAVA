@@ -1,24 +1,30 @@
-
+  import java.util.*;
 public class sol {
         public static int longestSubarray(int[] a, int k) {
-            int mc=0;
+        int sum = 0, length = 0;
+        Map<Integer, Integer> map = new HashMap<>();
+
         for (int i = 0; i < a.length; i++) {
-            for (int j = i; j < a.length; j++) {
-                int sum=0;
-            for (int l = i; l <= j; l++) {
-                sum+=a[l];
+            sum += a[i];
+
+            if (sum == k) {
+                length = Math.max(length, i + 1);
             }
-            if(sum==k){
-                mc=Math.max(mc,j-i+1);
+
+            if (!map.containsKey(sum)) {
+                map.put(sum, i); 
             }
+
+            if (map.containsKey(sum - k)) {
+                length = Math.max(length, i - map.get(sum - k));
             }
         }
-        return mc;
+
+        return length;
     }
     public static void main(String[] args) {
-        int a[]={1,2,3,1,1,1,1,4,2,3};
-        int ans=longestSubarray(a, 5);
+        int a[]={10,5,2,7,1,-10};
+        int ans=longestSubarray(a, 15);
         System.out.println(ans);
     }
 }
-
