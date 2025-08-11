@@ -1,4 +1,3 @@
-import java.util.Arrays;
 
 public class solution2 {
     public static int[] plusOne(int[] digits) {
@@ -22,7 +21,5 @@ public class solution2 {
     public static void main(String[] args) {
             int[] digits = {9, 9, 9};
         int[] result =plusOne(digits);
-        System.out.println("Result: " + Arrays.toString(result));
-        
     }
 }

@@ -1,6 +1,3 @@
-
-import javax.lang.model.util.ElementScanner14;
-
 public class two_pointer_aproach {
     public static int move_0_to_end(int a[]) {
         int i = 0;
@@ -40,7 +37,7 @@ public class two_pointer_aproach {
     }
 
     public static void main(String[] args) {
-        int a[] = {0,0,0,0,0,9,0,0,9,0,0,9,0};
+        int a[] = {0,1,2,3,0,0,1,2};
         move_0_to_end(a);
         for (int i = 0; i < a.length; i++) {
             System.out.println(a[i]);

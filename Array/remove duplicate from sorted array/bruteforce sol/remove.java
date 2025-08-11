@@ -2,12 +2,13 @@
 public class remove {
     public static int[] remov(int a[]) {
         int temp[] = new int[a.length];
+        int j=0;
         for (int i = 0; i < a.length - 1; i++) {
             if (a[i] != a[i + 1]) {
-                temp[i] = a[i];
+                temp[j++] = a[i];
             }
         }
-        temp[a.length - 1] = a[a.length - 1];
+        temp[j-1] = a[a.length - 1];
         return temp;
     }
 
@@ -18,7 +19,7 @@ public class remove {
             if (res[i] != 0) {
                 System.out.print(res[i] + " ");
             }
-        }
+        } 
 
 
     }

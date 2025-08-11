@@ -17,7 +17,7 @@ public static int max_con_0_and_1(int a[]){
     public static void main(String[] args) {
         int a[]={1,2,3,4,0,0,0,1,1,0,0,0,0,2,1,1,1,1,1};
         int ans=max_con_0_and_1(a);
-        System.out.println(ans);
+        System.out.println(ansans);
     }
 }
 
