@@ -13,13 +13,11 @@ public class use_two_pointer {
 
         if (d < diff) {
             diff = d;
-            // ans[0] = i;
-            // ans[1] = j;
-            ans = new int[]{i, j};
+            ans = new int[]{a[i], a[j]};
         }
 
         if (sum == target) {
-            return new int[]{i, j};
+            break;
         } else if (sum > target) {
             j--;
         } else {
@@ -31,8 +29,8 @@ public class use_two_pointer {
 }
 
     public static void main(String args[]){
-        int a[]={-8, 5, 2, -6};
-        int ans[]=close_to_0(a,0);
+        int a[]={10,20,30,5};
+        int ans[]=close_to_0(a,25);
         for (int i = 0; i <ans.length; i++) {
             System.out.println(ans[i]);
         }
