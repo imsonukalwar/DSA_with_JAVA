@@ -1,4 +1,4 @@
-
+// here we are using kadane's algorithm
 public class sol {
     public static int maxsubarray_sum(int a[]){
         int max=Integer.MIN_VALUE;
