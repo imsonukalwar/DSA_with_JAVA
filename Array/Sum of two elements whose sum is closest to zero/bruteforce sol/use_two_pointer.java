@@ -14,9 +14,14 @@ public class use_two_pointer {
                     ans[0] = a[i];
                     ans[1] = a[j];
                 }
+                if(sum==target){
+                    break;
+                }
             }
         }
 
+
+        
         return ans;
     }
 

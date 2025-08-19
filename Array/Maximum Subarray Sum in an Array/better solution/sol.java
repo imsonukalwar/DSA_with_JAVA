@@ -1,6 +1,6 @@
 public class sol {
     public static int maxsum(int a[]){
-        int max=0;
+        int max=Integer.MIN_VALUE;
         for (int i = 0; i < a.length; i++) {
             int sum=0;
             for (int j = i; j <a.length; j++) {
@@ -16,3 +16,4 @@ public class sol {
         System.out.println(ans);
     }
 }
+

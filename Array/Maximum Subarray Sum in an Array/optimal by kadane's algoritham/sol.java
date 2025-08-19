@@ -16,7 +16,7 @@ public class sol {
         return max;
     }
     public static void main(String[] args) {
-        int a[]={-2,-3,4,-1,-2,1,5,-3};
+        int a[]={-2,1,-3,4,-1,2,1,-5,4};
         int ans=maxsubarray_sum(a);
         System.out.println(ans);
     }
