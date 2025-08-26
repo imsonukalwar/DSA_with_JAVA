@@ -18,10 +18,6 @@ public class sol{
         while (j < b.length) {
             ans[k++] = b[j++];
         }
-        // float meadian=0;
-        // for (int m = 1; m <ans.length-1; m++) {
-        //     meadian=sum+ans[m]/m;
-        // }
         float meadian;
         int n = ans.length;
         if (n % 2 == 1) {
